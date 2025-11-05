@@ -142,24 +142,3 @@ Implement CI/CD pipelines for automated deployments
 
 Add unit tests and alerting for production reliability
 
-👤 Author
-
-Dinesh Kyanam
-Data Engineer | AWS | PySpark | Snowflake | Kafka | Airflow
-📧 dineshkyanam@gmail.com
-
-🔗 LinkedIn
-
-🏁 Summary
-
-This project demonstrates an end-to-end real-time data engineering solution built for retail analytics, showing your ability to:
-
-Ingest and process streaming data at scale
-
-Implement Delta Lake & Snowflake for analytics and reliability
-
-Automate pipelines using Airflow
-
-Deliver actionable insights through modern data engineering principles
-
-🚀 A complete Data Engineering portfolio project that reflects real-world, production-grade experience.
