@@ -125,10 +125,16 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 ## 📉 KPI Dashboards
 
 ### 🧾 Orders Over Time
-![Orders Over Time](docs/orders_over_time.png)
+![Orders Over Time](https://raw.githubusercontent.com/DineshKyanam/Retail-streaming/main/docs/orders_over_time.png)
 
 ### 💰 Revenue Over Time
-![Revenue Over Time](docs/revenue_over_time.png)
+![Revenue Over Time](https://raw.githubusercontent.com/DineshKyanam/Retail-streaming/main/docs/revenue_over_time.png)
+
+---
+
+## 📊 Sample Outputs (CSV)
+
+📁 [Download full output → outputs/aggregates_daily.csv](https://github.com/DineshKyanam/Retail-streaming/blob/main/outputs/aggregates_daily.csv)
 
 ---
 
