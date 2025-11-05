@@ -107,28 +107,40 @@ Access Airflow UI at http://localhost:8080
 
 Enable and trigger the DAG retail_streaming_dag to orchestrate the ETL flow.
 
-📊 Sample Outputs
+---
+
+## 📊 Sample Outputs
 
 Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 
-date	orders	revenue_usd	avg_order_value_usd	streaming_latency_ms
-2025-10-01	1023	34456.78	33.69	320
-2025-10-02	1289	45123.56	35.00	295
-2025-10-03	1411	49320.47	34.95	270
+| date       | orders | revenue_usd | avg_order_value_usd | streaming_latency_ms |
+|------------|--------|-------------|---------------------|----------------------|
+| 2025-10-01 | 1023   | 34456.78    | 33.69               | 320 |
+| 2025-10-02 | 1289   | 45123.56    | 35.00               | 295 |
+| 2025-10-03 | 1411   | 49320.47    | 34.95               | 270 |
 
-[Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
+📁 [Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
 
-📈 Business Value
+---
 
-Enables real-time sales and revenue analytics
+## 📉 KPI Dashboards
 
-Delivers sub-second latency metrics for fast decision-making
+### 🧾 Orders Over Time
+![Orders Over Time](docs/orders_over_time.png)
 
-Supports fraud detection, dynamic pricing, and inventory optimization
+### 💰 Revenue Over Time
+![Revenue Over Time](docs/revenue_over_time.png)
 
-Combines streaming + batch processing in a unified Lakehouse architecture
+---
 
-Demonstrates production-ready orchestration with Airflow and dbt
+## 📈 Business Value
+
+- Enables **real-time sales and revenue analytics**  
+- Delivers **sub-second latency** metrics for fast decision-making  
+- Supports **fraud detection**, **dynamic pricing**, and **inventory optimization**  
+- Combines **streaming + batch processing** in a unified **Lakehouse architecture**  
+- Demonstrates **production-ready orchestration** with Airflow and dbt
+
 
 🧩 Future Enhancements
 
