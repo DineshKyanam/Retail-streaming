@@ -116,7 +116,7 @@ date	orders	revenue_usd	avg_order_value_usd	streaming_latency_ms
 2025-10-02	1289	45123.56	35.00	295
 2025-10-03	1411	49320.47	34.95	270
 
-📁 Download full output → outputs/aggregates_daily.csv
+[Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
 
 📈 Business Value
 
