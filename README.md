@@ -1,11 +1,11 @@
-# 🛒 Real-Time Retail Data Streaming Platform
+#  Real-Time Retail Data Streaming Platform
 
 A production-grade **real-time retail data pipeline** built using **Apache Kafka**, **Spark Structured Streaming**, **Delta Lake**, **Snowflake**, and **Airflow**.  
 This project simulates a retail company’s end-to-end data flow — from **live transaction ingestion** to **data warehousing and analytics** — demonstrating a complete **modern cloud-native data engineering pipeline**.
 
 ---
 
-## 🧭 Architecture (Modern Data Lakehouse)
+##  Architecture (Modern Data Lakehouse)
 
 ![Architecture](docs/architecture.png)
 
@@ -14,12 +14,12 @@ This project simulates a retail company’s end-to-end data flow — from **live
 
 ---
 
-## 🧠 Project Overview
+##  Project Overview
 
 This project replicates a real-world **retail data streaming platform** where continuous point-of-sale and online transactions are processed in real time.  
 The goal is to deliver **low-latency analytics** for decision-making, fraud detection, and KPI monitoring.
 
-### 🎯 Objectives
+###  Objectives
 - Real-time ingestion using Kafka
 - Stream processing with Spark Structured Streaming
 - Storage and versioning via Delta Lake
@@ -29,7 +29,7 @@ The goal is to deliver **low-latency analytics** for decision-making, fraud dete
 
 ---
 
-## 🧱 Tech Stack
+##  Tech Stack
 
 | Category | Tools / Technologies |
 |-----------|----------------------|
@@ -72,12 +72,13 @@ Retail-streaming/
 └── docker-compose.yml → Local environment setup for Kafka/Spark
 
 
-## 🚀 Getting Started
+##  Getting Started
 
-### 1️⃣ Clone the Repository
+### 1️ Clone the Repository
 git clone https://github.com/DineshKyanam/Retail-streaming.git
 cd Retail-streaming
-2️⃣ Start the Local Environment
+
+2️ Start the Local Environment
 
 Make sure you have Docker Desktop running, then start your local stack:
 
@@ -86,26 +87,26 @@ docker compose up -d
 
 This starts Kafka, Spark, and Airflow services locally.
 
-3️⃣ Generate Streaming Data
+3️ Generate Streaming Data
 
 Run the mock data producer to continuously push transactions into Kafka:
 
 python producer/produce_transactions.py
 
-4️⃣ Process Data with Spark
+4️ Process Data with Spark
 
 Run the real-time Spark streaming job:
 
 spark-submit spark_streaming/stream_processor.py
 
-5️⃣ Monitor via Airflow
+5️ Monitor via Airflow
 
 Access Airflow UI at http://localhost:8080
 
 Enable and trigger the DAG retail_streaming_dag to orchestrate the ETL flow.
 
 
-## 📊 Sample Outputs
+##  Sample Outputs
 
 Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 
@@ -117,21 +118,21 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 
 📁 [Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
 
-## 📉 KPI Dashboards
+##  KPI Dashboards
 
-### 🧾 Orders Over Time
+###  Orders Over Time
 ![Orders Over Time](https://raw.githubusercontent.com/DineshKyanam/Retail-streaming/main/docs/orders_over_time.png)
 
-### 💰 Revenue Over Time
+###  Revenue Over Time
 ![Revenue Over Time](https://raw.githubusercontent.com/DineshKyanam/Retail-streaming/main/docs/revenue_over_time.png)
 
 
-## 📊 Sample Outputs (CSV)
+##  Sample Outputs (CSV)
 
 📁 [Download full output → outputs/aggregates_daily.csv](https://github.com/DineshKyanam/Retail-streaming/blob/main/outputs/aggregates_daily.csv)
 
 
-## 📈 Business Value
+##  Business Value
 
 - Enables **real-time sales and revenue analytics**  
 - Delivers **sub-second latency** metrics for fast decision-making  
@@ -140,7 +141,7 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 - Demonstrates **production-ready orchestration** with Airflow and dbt
 
 
-🧩 Future Enhancements
+ Future Enhancements
 
 Integrate Kafka Connect and Schema Registry
 
