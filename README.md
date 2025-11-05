@@ -1,10 +1,85 @@
+# 🛒 Real-Time Retail Data Streaming Platform
+
+A production-grade **real-time retail data pipeline** built using **Apache Kafka**, **Spark Structured Streaming**, **Delta Lake**, **Snowflake**, and **Airflow**.  
+This project simulates a retail company’s end-to-end data flow — from **live transaction ingestion** to **data warehousing and analytics** — demonstrating a complete **modern cloud-native data engineering pipeline**.
+
+---
+
+## 🧭 Architecture (Modern Data Lakehouse)
+
+![Architecture](docs/architecture.png)
+
+**Flow:**  
+`Mock Producer` → `Kafka` → `Spark Structured Streaming` → `Delta Lake (S3)` → `Snowflake` → `dbt + Airflow` → `BI Dashboard`
+
+---
+
+## 🧠 Project Overview
+
+This project replicates a real-world **retail data streaming platform** where continuous point-of-sale and online transactions are processed in real time.  
+The goal is to deliver **low-latency analytics** for decision-making, fraud detection, and KPI monitoring.
+
+### 🎯 Objectives
+- Real-time ingestion using Kafka
+- Stream processing with Spark Structured Streaming
+- Storage and versioning via Delta Lake
+- Warehouse integration with Snowflake
+- Workflow orchestration using Airflow
+- Visualization via BI tools (Power BI / Tableau / Streamlit)
+
+---
+
+## 🧱 Tech Stack
+
+| Category | Tools / Technologies |
+|-----------|----------------------|
+| **Languages** | Python, PySpark, SQL |
+| **Streaming** | Apache Kafka, Spark Structured Streaming |
+| **Storage / Lakehouse** | Delta Lake on AWS S3, Snowflake |
+| **Orchestration** | Apache Airflow, dbt |
+| **Infrastructure** | Docker, AWS |
+| **Visualization** | Power BI / Tableau / Streamlit |
+| **Version Control** | Git & GitHub |
+
+---
+
+## 🗂️ Project Structure
+
+Retail-streaming/
+│
+├── producer/ → Generates mock retail transactions
+│ └── produce_transactions.py
+│
+├── spark_streaming/ → Spark job to process data in real-time
+│ └── stream_processor.py
+│
+├── loaders/ → SQL scripts for Snowflake upsert logic
+│ └── snowflake_upsert.sql
+│
+├── airflow/dags/ → Airflow DAG for orchestrating the pipeline
+│ └── retail_streaming_dag.py
+│
+├── mock/ → Scripts to simulate batch KPIs
+│ ├── run_mock_stream.py
+│ └── run_batch_kpis.py
+│
+├── outputs/ → Processed KPI and analytics results
+│ └── aggregates_daily.csv
+│
+├── docs/ → Documentation and diagrams
+│ └── architecture.png
+│
+└── docker-compose.yml → Local environment setup for Kafka/Spark
+
+
+---
+
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
 ```bash
 git clone https://github.com/DineshKyanam/Retail-streaming.git
 cd Retail-streaming
-
 2️⃣ Start the Local Environment
 
 Make sure you have Docker Desktop running, then start your local stack:
@@ -47,21 +122,25 @@ date	orders	revenue_usd	avg_order_value_usd	streaming_latency_ms
 
 Enables real-time sales and revenue analytics
 
-Delivers sub-second latency metrics for decision-making
+Delivers sub-second latency metrics for fast decision-making
 
 Supports fraud detection, dynamic pricing, and inventory optimization
 
-Combines streaming + batch pipelines in a unified Lakehouse architecture
+Combines streaming + batch processing in a unified Lakehouse architecture
+
+Demonstrates production-ready orchestration with Airflow and dbt
 
 🧩 Future Enhancements
 
 Integrate Kafka Connect and Schema Registry
 
-Add Grafana dashboards for live metrics
+Add Grafana dashboards for live monitoring
 
 Deploy to AWS MSK + EMR + ECS for cloud scalability
 
-Add CI/CD pipelines for production-grade workflows
+Implement CI/CD pipelines for automated deployments
+
+Add unit tests and alerting for production reliability
 
 👤 Author
 
@@ -70,3 +149,17 @@ Data Engineer | AWS | PySpark | Snowflake | Kafka | Airflow
 📧 dineshkyanam@gmail.com
 
 🔗 LinkedIn
+
+🏁 Summary
+
+This project demonstrates an end-to-end real-time data engineering solution built for retail analytics, showing your ability to:
+
+Ingest and process streaming data at scale
+
+Implement Delta Lake & Snowflake for analytics and reliability
+
+Automate pipelines using Airflow
+
+Deliver actionable insights through modern data engineering principles
+
+🚀 A complete Data Engineering portfolio project that reflects real-world, production-grade experience.
