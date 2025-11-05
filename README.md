@@ -122,7 +122,6 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 📁 [Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
 
 ---
-
 ## 📉 KPI Dashboards
 
 ### 🧾 Orders Over Time
