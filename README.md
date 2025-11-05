@@ -72,12 +72,9 @@ Retail-streaming/
 └── docker-compose.yml → Local environment setup for Kafka/Spark
 
 
----
-
 ## 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
-```bash
 git clone https://github.com/DineshKyanam/Retail-streaming.git
 cd Retail-streaming
 2️⃣ Start the Local Environment
@@ -107,7 +104,6 @@ Access Airflow UI at http://localhost:8080
 
 Enable and trigger the DAG retail_streaming_dag to orchestrate the ETL flow.
 
----
 
 ## 📊 Sample Outputs
 
@@ -121,7 +117,6 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 
 📁 [Download full output → outputs/aggregates_daily.csv](outputs/aggregates_daily.csv)
 
----
 ## 📉 KPI Dashboards
 
 ### 🧾 Orders Over Time
@@ -130,13 +125,11 @@ Below is a snapshot of daily retail KPIs produced by the streaming pipeline:
 ### 💰 Revenue Over Time
 ![Revenue Over Time](https://raw.githubusercontent.com/DineshKyanam/Retail-streaming/main/docs/revenue_over_time.png)
 
----
 
 ## 📊 Sample Outputs (CSV)
 
 📁 [Download full output → outputs/aggregates_daily.csv](https://github.com/DineshKyanam/Retail-streaming/blob/main/outputs/aggregates_daily.csv)
 
----
 
 ## 📈 Business Value
 
