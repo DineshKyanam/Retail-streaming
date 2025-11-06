@@ -63,18 +63,18 @@ Retail-streaming/
 ## Getting Started
 
 ### 1️⃣ Clone the Repository
-```bash
+
 git clone https://github.com/DineshKyanam/Retail-streaming.git
 cd Retail-streaming
-```
+
 
 ### 2️⃣ Start the Local Environment
 
 Make sure you have Docker Desktop running, then start your local stack:
 
-```bash
+
 docker compose up -d
-```
+
 
 This starts Kafka, Spark, and Airflow services locally.
 
@@ -82,17 +82,17 @@ This starts Kafka, Spark, and Airflow services locally.
 
 Run the mock data producer to continuously push transactions into Kafka:
 
-```bash
+
 python producer/produce_transactions.py
-```
+
 
 ### 4️⃣ Process Data with Spark
 
 Run the real-time Spark streaming job:
 
-```bash
+
 spark-submit spark_streaming/stream_processor.py
-```
+
 
 ### 5️⃣ Monitor via Airflow
 
