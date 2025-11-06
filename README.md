@@ -9,6 +9,9 @@ This project simulates a retail company's end-to-end data flow — from live tra
 
 **Flow:** Mock Producer → Kafka → Spark Structured Streaming → Delta Lake (S3) → Snowflake → dbt + Airflow → BI Dashboard  
 
+### 🗺️ Architecture Diagram
+![Architecture Diagram](docs/architecture.png)
+
 Retail POS / E-Commerce Data
 │
 ▼
@@ -26,67 +29,6 @@ Snowflake (Analytics Layer)
 │
 ▼
 Power BI / Tableau / Streamlit
-
-yaml
-Copy code
-
----
-
-## 🎯 Project Overview
-This project replicates a **real-world retail data streaming platform** where continuous point-of-sale (POS) and online transactions are processed in real time.  
-The goal is to deliver **low-latency analytics** for decision-making, fraud detection, and KPI monitoring.
-
-### Objectives
-- Real-time ingestion using **Kafka**
-- Stream processing with **Spark Structured Streaming**
-- Storage and versioning via **Delta Lake**
-- Warehouse integration with **Snowflake**
-- Workflow orchestration using **Airflow**
-- Visualization via **Power BI / Tableau / Streamlit**
-
----
-
-## 🧩 Tech Stack
-
-| Category | Tools / Technologies |
-|-----------|----------------------|
-| Languages | Python, PySpark, SQL |
-| Streaming | Apache Kafka, Spark Structured Streaming |
-| Storage / Lakehouse | Delta Lake on AWS S3, Snowflake |
-| Orchestration | Apache Airflow, dbt |
-| Infrastructure | Docker, AWS |
-| Visualization | Power BI / Tableau / Streamlit |
-| Version Control | Git & GitHub |
-
----
-
-## 🗂️ Project Structure
-
-Retail-streaming/
-│
-├── producer/ → Generates mock retail transactions
-│ └── produce_transactions.py
-│
-├── spark_streaming/ → Spark job to process data in real time
-│ └── stream_processor.py
-│
-├── loaders/ → SQL scripts for Snowflake upsert logic
-│ └── snowflake_upsert.sql
-│
-├── airflow/dags/ → Airflow DAG for orchestrating the pipeline
-│ └── retail_streaming_dag.py
-│
-├── mock/ → Scripts to simulate batch KPIs
-│ ├── run_mock_stream.py
-│ └── run_batch_kpis.py
-│
-├── outputs/ → Processed KPI and analytics results
-│ └── aggregates_daily.csv
-│
-├── docs/ → Documentation and diagrams
-│ └── architecture.png
-│
-└── docker-compose.yml → Local environment setup for Kafka/Spark
 
 yaml
 Copy code
@@ -120,7 +62,7 @@ bash
 Copy code
 spark-submit spark_streaming/stream_processor.py
 5️⃣ Monitor via Airflow
-Access the Airflow UI at http://localhost:8080
+Access the Airflow UI at http://localhost:8080.
 Enable and trigger the DAG retail_streaming_dag to orchestrate the ETL flow.
 
 📊 Sample Outputs
@@ -166,3 +108,7 @@ Dinesh Kyanam
 📧 kyanamdinesh18@gmail.com
 🔗 linkedin.com/in/dinesh-kyanam-180b611a2
 💻 github.com/DineshKyanam
+
+
+
+
